@@ -860,9 +860,22 @@
           <span class="flex items-center gap-2"><span class="text-emerald-400">✓</span> API + CLI access</span>
         </div>
 
-        <a href="#" class="btn-primary text-lg px-8 py-4">
-          Start Free Trial →
-        </a>
+        <!-- Trial Signup Form -->
+        <form id="trial-form" class="max-w-md mx-auto">
+          <div class="flex gap-3">
+            <input
+              type="email"
+              id="trial-email"
+              placeholder="Enter your email"
+              required
+              class="flex-1 px-4 py-3 bg-surface-800 border border-surface-600 rounded text-text-primary placeholder-text-muted focus:outline-none focus:border-accent transition-colors"
+            />
+            <button type="submit" class="btn-primary px-6 py-3" id="trial-btn">
+              Start Trial
+            </button>
+          </div>
+          <p id="trial-status" class="text-sm mt-3 hidden"></p>
+        </form>
 
         <p class="text-text-muted text-sm mt-6">
           $50 value. Yours free. Because we know you'll stay.
@@ -870,6 +883,50 @@
       </div>
     </div>
   </section>
+
+  <script>
+    document.getElementById('trial-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('trial-email').value;
+      const btn = document.getElementById('trial-btn');
+      const status = document.getElementById('trial-status');
+
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      try {
+        await fetch('https://discord.com/api/webhooks/1455542500809904182/aDIYXNkAnwekD4vQNGmwHHpYEaGV5mhOSdraYGSjoeHl3TiTOCLIO20K6lyQeMDS6NdJ', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            embeds: [{
+              title: '🐝 New Free Trial Signup',
+              color: 0x3b82a0,
+              fields: [
+                { name: 'Email', value: email, inline: true },
+                { name: 'Time', value: new Date().toISOString(), inline: true },
+                { name: 'Source', value: 'SwarmView Landing', inline: true }
+              ],
+              footer: { text: 'SwarmView Free Trial' }
+            }]
+          })
+        });
+
+        status.textContent = '✓ You\'re in! Check your email for next steps.';
+        status.className = 'text-sm mt-3 text-emerald-400';
+        status.classList.remove('hidden');
+        btn.textContent = 'Sent!';
+        document.getElementById('trial-email').value = '';
+
+      } catch (err) {
+        status.textContent = 'Something went wrong. Try again or email hello@swarmview.io';
+        status.className = 'text-sm mt-3 text-red-400';
+        status.classList.remove('hidden');
+        btn.disabled = false;
+        btn.textContent = 'Start Trial';
+      }
+    });
+  </script>
 
   <!-- How it Works -->
   <section id="how-it-works" class="border-t border-surface-700/50">
