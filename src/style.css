@@ -116,3 +116,25 @@
 .stagger-3 { animation-delay: 0.3s; }
 .stagger-4 { animation-delay: 0.4s; }
 .stagger-5 { animation-delay: 0.5s; }
+
+/* Pulse animation for new feed items */
+@keyframes pulseOnce {
+  0% { background-color: rgba(52, 211, 153, 0.1); }
+  100% { background-color: transparent; }
+}
+
+.animate-pulse-once {
+  animation: pulseOnce 2s ease-out;
+}
+
+/* Live indicator ping */
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}

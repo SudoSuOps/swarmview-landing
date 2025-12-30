@@ -22,10 +22,11 @@
         <span class="font-medium text-text-primary tracking-tight">SwarmView</span>
       </a>
       <div class="hidden md:flex items-center gap-8 text-sm text-text-secondary">
-        <a href="#how-it-works" class="hover:text-text-primary transition-colors">How it works</a>
-        <a href="#trust" class="hover:text-text-primary transition-colors">Trust</a>
+        <a href="#stack" class="hover:text-text-primary transition-colors">Stack</a>
+        <a href="#models" class="hover:text-text-primary transition-colors">Models</a>
+        <a href="#impact" class="hover:text-text-primary transition-colors">Impact</a>
         <a href="#protocol" class="hover:text-text-primary transition-colors">Protocol</a>
-        <a href="mailto:hello@swarmview.io" class="btn-primary py-2 px-4">Contact</a>
+        <a href="#trial" class="btn-primary py-2 px-4">Free Trial</a>
       </div>
     </div>
   </nav>
@@ -72,35 +73,800 @@
         <div class="card">
           <div class="space-y-4 font-mono text-sm">
             <div class="flex items-center gap-4">
-              <div class="w-24 py-2 px-3 bg-surface-700 rounded text-text-secondary text-center">Clinic</div>
-              <svg class="w-8 h-4 connector" fill="none" stroke="currentColor" viewBox="0 0 32 16">
+              <div class="w-24 py-2 px-3 bg-blue-500/20 border border-blue-500/40 rounded text-blue-400 text-center">Clinic</div>
+              <svg class="w-8 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 32 16">
                 <path d="M0 8h28m-4-4l4 4-4 4" stroke-width="1.5"/>
               </svg>
-              <div class="w-28 py-2 px-3 bg-accent/20 border border-accent/30 rounded text-accent text-center">SwarmView</div>
+              <div class="w-28 py-2 px-3 bg-accent/20 border border-accent/40 rounded text-accent text-center">SwarmView</div>
             </div>
-            <div class="ml-36 pl-4 border-l border-surface-600">
-              <svg class="w-4 h-6 connector -ml-2" fill="none" stroke="currentColor" viewBox="0 0 16 24">
+            <div class="ml-36 pl-4 border-l border-accent/40">
+              <svg class="w-4 h-6 text-accent -ml-2" fill="none" stroke="currentColor" viewBox="0 0 16 24">
                 <path d="M8 0v20m-4-4l4 4 4-4" stroke-width="1.5"/>
               </svg>
             </div>
             <div class="flex items-center gap-4 ml-24">
-              <div class="w-32 py-2 px-3 bg-surface-700 rounded text-text-secondary text-center">Local Operator</div>
+              <div class="w-32 py-2 px-3 bg-emerald-500/20 border border-emerald-500/40 rounded text-emerald-400 text-center">Local Operator</div>
             </div>
-            <div class="ml-36 pl-4 border-l border-surface-600">
-              <svg class="w-4 h-6 connector -ml-2 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 16 24">
+            <div class="ml-36 pl-4 border-l border-emerald-500/40">
+              <svg class="w-4 h-6 text-emerald-400 -ml-2 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 16 24">
                 <path d="M8 0v20m-4-4l4 4 4-4" stroke-width="1.5"/>
               </svg>
             </div>
             <div class="flex items-center gap-4">
-              <div class="w-24 py-2 px-3 bg-surface-700 rounded text-text-secondary text-center">Clinic</div>
-              <svg class="w-8 h-4 connector rotate-180" fill="none" stroke="currentColor" viewBox="0 0 32 16">
+              <div class="w-24 py-2 px-3 bg-blue-500/20 border border-blue-500/40 rounded text-blue-400 text-center">Clinic</div>
+              <svg class="w-8 h-4 text-purple-400 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 32 16">
                 <path d="M0 8h28m-4-4l4 4-4 4" stroke-width="1.5"/>
               </svg>
-              <div class="w-28 py-2 px-3 bg-surface-700/50 rounded text-text-muted text-center">Report</div>
+              <div class="w-28 py-2 px-3 bg-purple-500/20 border border-purple-500/40 rounded text-purple-400 text-center">Report</div>
             </div>
           </div>
           <p class="mt-6 text-xs text-text-muted font-mono">No data stored at any stage</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Stack - End to End -->
+  <section id="stack" class="border-t border-surface-700/50 bg-surface-800/30">
+    <div class="section-container">
+      <p class="section-label">End-to-End</p>
+      <h2 class="section-title">We built the entire stack.</h2>
+      <p class="text-text-secondary text-lg mb-12">Not assembled. Not integrated. Built from scratch. Every layer is ours.</p>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Stack Diagram -->
+        <div class="space-y-3">
+          <div class="card border-l-4 border-l-accent">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-accent font-mono text-sm">01</span>
+              <span class="text-text-primary font-medium">SwarmVision Protocol</span>
+            </div>
+            <p class="text-text-secondary text-sm">Open specification for sovereign compute. Job routing, identity, treasury, proof verification.</p>
+          </div>
+          <div class="card border-l-4 border-l-blue-400">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-blue-400 font-mono text-sm">02</span>
+              <span class="text-text-primary font-medium">SwarmAgent Daemon</span>
+            </div>
+            <p class="text-text-secondary text-sm">GPU operator runtime. Heartbeat, job execution, Proof of Execution signing. Runs on our hardware.</p>
+          </div>
+          <div class="card border-l-4 border-l-emerald-400">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-emerald-400 font-mono text-sm">03</span>
+              <span class="text-text-primary font-medium">QuantumRails Models</span>
+            </div>
+            <p class="text-text-secondary text-sm">Fine-tuned medical AI. QueenBee-7B-Spine LLM + EfficientNet-B4 classifier. We own the weights.</p>
+          </div>
+          <div class="card border-l-4 border-l-purple-400">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-purple-400 font-mono text-sm">04</span>
+              <span class="text-text-primary font-medium">Training Data Pipeline</span>
+            </div>
+            <p class="text-text-secondary text-sm">1,975 spine studies. 88K+ fundus images. 227K chest X-rays. Curated, cleaned, instruction-tuned.</p>
+          </div>
+          <div class="card border-l-4 border-l-amber-400">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-amber-400 font-mono text-sm">05</span>
+              <span class="text-text-primary font-medium">GPU Fleet</span>
+            </div>
+            <p class="text-text-secondary text-sm">296 GPUs. RTX 5090, 6000 Ada, 3090 Ti. Dual-GPU inference. bf16 mixed precision. On-prem.</p>
+          </div>
+        </div>
+
+        <!-- Tech Specs Card -->
+        <div class="card bg-surface-900/50">
+          <p class="font-mono text-xs text-accent mb-6">// TECHNICAL SPECIFICATIONS</p>
+          <div class="space-y-4 text-sm">
+            <div class="flex justify-between border-b border-surface-700 pb-2">
+              <span class="text-text-muted">Base LLM</span>
+              <span class="text-text-primary font-mono">Mistral-7B-v0.3</span>
+            </div>
+            <div class="flex justify-between border-b border-surface-700 pb-2">
+              <span class="text-text-muted">Fine-tuning</span>
+              <span class="text-text-primary font-mono">QLoRA r=64 α=128</span>
+            </div>
+            <div class="flex justify-between border-b border-surface-700 pb-2">
+              <span class="text-text-muted">Classifier</span>
+              <span class="text-text-primary font-mono">EfficientNet-B4</span>
+            </div>
+            <div class="flex justify-between border-b border-surface-700 pb-2">
+              <span class="text-text-muted">Output Heads</span>
+              <span class="text-text-primary font-mono">25 (5×5 levels)</span>
+            </div>
+            <div class="flex justify-between border-b border-surface-700 pb-2">
+              <span class="text-text-muted">Inference GPU</span>
+              <span class="text-text-primary font-mono">RTX 5090 × 2</span>
+            </div>
+            <div class="flex justify-between border-b border-surface-700 pb-2">
+              <span class="text-text-muted">Precision</span>
+              <span class="text-text-primary font-mono">bf16 mixed</span>
+            </div>
+            <div class="flex justify-between border-b border-surface-700 pb-2">
+              <span class="text-text-muted">Quantization</span>
+              <span class="text-text-primary font-mono">4-bit NF4</span>
+            </div>
+            <div class="flex justify-between border-b border-surface-700 pb-2">
+              <span class="text-text-muted">Image Input</span>
+              <span class="text-text-primary font-mono">512×512 MRI</span>
+            </div>
+            <div class="flex justify-between border-b border-surface-700 pb-2">
+              <span class="text-text-muted">Med Imaging</span>
+              <span class="text-text-primary font-mono">MONAI + PyDICOM</span>
+            </div>
+            <div class="flex justify-between border-b border-surface-700 pb-2">
+              <span class="text-text-muted">Training Loss</span>
+              <span class="text-text-primary font-mono">0.046 (converged)</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-text-muted">Signatures</span>
+              <span class="text-text-primary font-mono">ECDSA secp256k1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- We Own the Compute -->
+  <section id="infrastructure" class="border-t border-surface-700/50">
+    <div class="section-container">
+      <p class="section-label">Infrastructure</p>
+      <h2 class="section-title">We own the compute.</h2>
+
+      <div class="grid md:grid-cols-3 gap-8 mt-8">
+        <div class="space-y-4 text-text-secondary">
+          <p class="text-lg text-text-primary font-medium">We built the rails.</p>
+          <p>SwarmVision Protocol + QuantumRails. Open specification for verified, distributed compute. FastAPI + PyTorch + PEFT. No third-party AI dependencies.</p>
+        </div>
+        <div class="space-y-4 text-text-secondary">
+          <p class="text-lg text-text-primary font-medium">We own the GPUs.</p>
+          <p>RTX 5090 dual-GPU inference. RTX 6000 Ada for large models. 3090 Ti fleet for parallel processing. Solar-powered. On-prem.</p>
+        </div>
+        <div class="space-y-4 text-text-secondary">
+          <p class="text-lg text-text-primary font-medium">We trained the models.</p>
+          <p>QueenBee-7B-Spine on Mistral-7B. EfficientNet-B4 classifier. 1,975 studies instruction-tuned. Full lineage on HuggingFace.</p>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+        <div class="card text-center">
+          <p class="text-3xl md:text-4xl font-light text-accent mb-1">296</p>
+          <p class="text-text-muted text-sm">GPUs Owned</p>
+        </div>
+        <div class="card text-center">
+          <p class="text-3xl md:text-4xl font-light text-emerald-400 mb-1">80.4%</p>
+          <p class="text-text-muted text-sm">Classifier Accuracy</p>
+        </div>
+        <div class="card text-center">
+          <p class="text-3xl md:text-4xl font-light text-blue-400 mb-1">95%</p>
+          <p class="text-text-muted text-sm">Referrable DR Detection</p>
+        </div>
+        <div class="card text-center">
+          <p class="text-3xl md:text-4xl font-light text-purple-400 mb-1">4.7s</p>
+          <p class="text-text-muted text-sm">End-to-End Latency</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Feed -->
+  <section id="live" class="border-t border-surface-700/50">
+    <div class="section-container">
+      <div class="flex items-center justify-between mb-8">
+        <div>
+          <p class="section-label">Live Feed</p>
+          <h2 class="section-title">Watch the swarm work.</h2>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+          </span>
+          <span class="text-emerald-400 text-sm font-medium">LIVE</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Feed Table -->
+        <div class="md:col-span-2 card overflow-hidden">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="border-b border-surface-600 text-text-muted">
+                <th class="text-left py-3 px-4 font-medium">Time</th>
+                <th class="text-left py-3 px-4 font-medium">Study ID</th>
+                <th class="text-left py-3 px-4 font-medium">Finding</th>
+                <th class="text-right py-3 px-4 font-medium">Duration</th>
+              </tr>
+            </thead>
+            <tbody class="font-mono text-xs" id="live-feed">
+              <tr class="border-b border-surface-700/50 animate-pulse-once">
+                <td class="py-3 px-4 text-emerald-400">just now</td>
+                <td class="py-3 px-4 text-text-secondary">spine_af59520f</td>
+                <td class="py-3 px-4 text-text-primary">Normal</td>
+                <td class="py-3 px-4 text-right text-text-muted">4.6s</td>
+              </tr>
+              <tr class="border-b border-surface-700/50">
+                <td class="py-3 px-4 text-text-muted">6s ago</td>
+                <td class="py-3 px-4 text-text-secondary">spine_c6034191</td>
+                <td class="py-3 px-4 text-text-primary">Normal</td>
+                <td class="py-3 px-4 text-right text-text-muted">5.9s</td>
+              </tr>
+              <tr class="border-b border-surface-700/50">
+                <td class="py-3 px-4 text-text-muted">10s ago</td>
+                <td class="py-3 px-4 text-text-secondary">spine_18caf040</td>
+                <td class="py-3 px-4 text-amber-400">L5-S1 moderate</td>
+                <td class="py-3 px-4 text-right text-text-muted">4.7s</td>
+              </tr>
+              <tr class="border-b border-surface-700/50">
+                <td class="py-3 px-4 text-text-muted">16s ago</td>
+                <td class="py-3 px-4 text-text-secondary">spine_8c308c46</td>
+                <td class="py-3 px-4 text-amber-400">L5-S1 moderate</td>
+                <td class="py-3 px-4 text-right text-text-muted">4.1s</td>
+              </tr>
+              <tr class="border-b border-surface-700/50">
+                <td class="py-3 px-4 text-text-muted">21s ago</td>
+                <td class="py-3 px-4 text-text-secondary">spine_b2f7d021</td>
+                <td class="py-3 px-4 text-text-primary">No stenosis</td>
+                <td class="py-3 px-4 text-right text-text-muted">4.6s</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 text-text-muted">26s ago</td>
+                <td class="py-3 px-4 text-text-secondary">spine_bbe33afc</td>
+                <td class="py-3 px-4 text-blue-400">L3-L4 mild</td>
+                <td class="py-3 px-4 text-right text-text-muted">5.8s</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Live Stats -->
+        <div class="space-y-4">
+          <div class="card">
+            <p class="text-text-muted text-xs mb-2">Scans Today</p>
+            <p class="text-3xl font-light text-text-primary">849</p>
+          </div>
+          <div class="card">
+            <p class="text-text-muted text-xs mb-2">Avg Latency</p>
+            <p class="text-3xl font-light text-accent">4.6s</p>
+          </div>
+          <div class="card">
+            <p class="text-text-muted text-xs mb-2">In Queue</p>
+            <p class="text-3xl font-light text-emerald-400">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Built for Specialists -->
+  <section id="specialists" class="border-t border-surface-700/50 bg-surface-800/30">
+    <div class="section-container">
+      <p class="section-label">Use Cases</p>
+      <h2 class="section-title">Built for specialists who need answers, not excuses.</h2>
+      <p class="text-text-secondary text-lg mb-12">Low-friction AI for high-stakes decisions. Start with spine, expand to full MSK.</p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card">
+          <div class="text-2xl mb-3">🏃</div>
+          <h3 class="text-text-primary font-medium mb-2">Sports Medicine</h3>
+          <p class="text-text-secondary text-sm">Fast triage for athlete injuries. Quantitative severity grading for return-to-play decisions.</p>
+        </div>
+        <div class="card">
+          <div class="text-2xl mb-3">🦴</div>
+          <h3 class="text-text-primary font-medium mb-2">Orthopedic Practices</h3>
+          <p class="text-text-secondary text-sm">Spine stenosis analysis. Pre-surgical planning support. Second-opinion AI.</p>
+        </div>
+        <div class="card">
+          <div class="text-2xl mb-3">⚖️</div>
+          <h3 class="text-text-primary font-medium mb-2">IME / Workers Comp</h3>
+          <p class="text-text-secondary text-sm">Consistent grading across examiners. Audit-ready reports. Objective, not subjective.</p>
+        </div>
+        <div class="card">
+          <div class="text-2xl mb-3">🏥</div>
+          <h3 class="text-text-primary font-medium mb-2">Imaging Centers</h3>
+          <p class="text-text-secondary text-sm">Volume processing. API-first integration. White-label available.</p>
+        </div>
+        <div class="card">
+          <div class="text-2xl mb-3">📋</div>
+          <h3 class="text-text-primary font-medium mb-2">Insurance Validators</h3>
+          <p class="text-text-secondary text-sm">Claim support scoring. Review prioritization. Approve / Review / Escalate outputs.</p>
+        </div>
+        <div class="card">
+          <div class="text-2xl mb-3">🔬</div>
+          <h3 class="text-text-primary font-medium mb-2">Research Institutions</h3>
+          <p class="text-text-secondary text-sm">Reproducible pipelines. Full provenance tracking. Bulk processing for studies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem -->
+  <section id="problem" class="border-t border-surface-700/50">
+    <div class="section-container">
+      <p class="section-label">The Problem</p>
+      <h2 class="section-title">Hyperscalers want your data.<br>We just want to process it.</h2>
+      <p class="text-text-secondary text-lg mb-12">The cloud model is broken for medical AI. Here's why we built something different.</p>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Hyperscaler Way -->
+        <div class="card border-red-500/20 bg-red-500/5">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="text-2xl">☁️</span>
+            <h3 class="text-text-primary font-medium">The Hyperscaler Way</h3>
+          </div>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3 text-text-secondary">
+              <span class="text-red-400 mt-0.5">✗</span>
+              Rent GPUs by the hour — margins shrink at scale
+            </li>
+            <li class="flex items-start gap-3 text-text-secondary">
+              <span class="text-red-400 mt-0.5">✗</span>
+              Call black-box APIs — no model ownership
+            </li>
+            <li class="flex items-start gap-3 text-text-secondary">
+              <span class="text-red-400 mt-0.5">✗</span>
+              PHI sits in their cloud — liability is yours
+            </li>
+            <li class="flex items-start gap-3 text-text-secondary">
+              <span class="text-red-400 mt-0.5">✗</span>
+              Prices increase after you're locked in
+            </li>
+            <li class="flex items-start gap-3 text-text-secondary">
+              <span class="text-red-400 mt-0.5">✗</span>
+              Audit trail? "Trust us."
+            </li>
+            <li class="flex items-start gap-3 text-text-secondary">
+              <span class="text-red-400 mt-0.5">✗</span>
+              Multi-tenant inference — your data, their GPUs, who else?
+            </li>
+          </ul>
+        </div>
+
+        <!-- QuantumSwarm Way -->
+        <div class="card border-emerald-500/20 bg-emerald-500/5">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="text-2xl">🐝</span>
+            <h3 class="text-text-primary font-medium">The QuantumSwarm Way</h3>
+          </div>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3 text-text-secondary">
+              <span class="text-emerald-400 mt-0.5">✓</span>
+              Own the GPUs — cost is fixed, margins grow
+            </li>
+            <li class="flex items-start gap-3 text-text-secondary">
+              <span class="text-emerald-400 mt-0.5">✓</span>
+              Train the models — we own the weights
+            </li>
+            <li class="flex items-start gap-3 text-text-secondary">
+              <span class="text-emerald-400 mt-0.5">✓</span>
+              Process and delete — zero PHI retention
+            </li>
+            <li class="flex items-start gap-3 text-text-secondary">
+              <span class="text-emerald-400 mt-0.5">✓</span>
+              Pricing locked — no bait and switch
+            </li>
+            <li class="flex items-start gap-3 text-text-secondary">
+              <span class="text-emerald-400 mt-0.5">✓</span>
+              Cryptographic audit — verify, don't trust
+            </li>
+            <li class="flex items-start gap-3 text-text-secondary">
+              <span class="text-emerald-400 mt-0.5">✓</span>
+              Dedicated inference — your job, your silicon
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sample Output -->
+  <section id="samples" class="border-t border-surface-700/50 bg-surface-800/30">
+    <div class="section-container">
+      <p class="section-label">Sample Output</p>
+      <h2 class="section-title">Real reports. Real findings. See what you get.</h2>
+      <p class="text-text-secondary mb-12">Every scan produces a PDF with stenosis grades, clinical impression, and cryptographic hash.</p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Normal -->
+        <div class="card">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xl">📄</span>
+            <span class="font-mono text-xs text-text-muted">SPINE_REPORT.PDF</span>
+            <span class="ml-auto px-2 py-0.5 bg-emerald-500/20 text-emerald-400 text-xs rounded font-medium">NORMAL</span>
+          </div>
+          <h4 class="text-text-primary font-medium mb-2">Lumbar Spine — No Significant Findings</h4>
+          <p class="text-text-secondary text-sm mb-4">L1-L2 through L5-S1 evaluated. No central canal stenosis. Neural foramina patent bilaterally.</p>
+          <div class="flex items-center justify-between text-xs">
+            <span class="text-text-muted">4.2s inference</span>
+            <a href="#" class="text-accent hover:underline">View PDF →</a>
+          </div>
+        </div>
+
+        <!-- Moderate -->
+        <div class="card">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xl">📄</span>
+            <span class="font-mono text-xs text-text-muted">SPINE_REPORT.PDF</span>
+            <span class="ml-auto px-2 py-0.5 bg-amber-500/20 text-amber-400 text-xs rounded font-medium">MODERATE</span>
+          </div>
+          <h4 class="text-text-primary font-medium mb-2">L4-L5 Subarticular Stenosis</h4>
+          <p class="text-text-secondary text-sm mb-4">Moderate right subarticular stenosis at L4-L5. May cause right L5 radiculopathy. Conservative management recommended.</p>
+          <div class="flex items-center justify-between text-xs">
+            <span class="text-text-muted">4.7s inference</span>
+            <a href="#" class="text-accent hover:underline">View PDF →</a>
+          </div>
+        </div>
+
+        <!-- Severe -->
+        <div class="card">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-xl">📄</span>
+            <span class="font-mono text-xs text-text-muted">SPINE_REPORT.PDF</span>
+            <span class="ml-auto px-2 py-0.5 bg-red-500/20 text-red-400 text-xs rounded font-medium">SEVERE</span>
+          </div>
+          <h4 class="text-text-primary font-medium mb-2">Multi-Level Stenosis</h4>
+          <p class="text-text-secondary text-sm mb-4">Severe central stenosis L5-S1. Moderate bilateral foraminal narrowing L4-L5. Surgical consultation recommended.</p>
+          <div class="flex items-center justify-between text-xs">
+            <span class="text-text-muted">5.1s inference</span>
+            <a href="#" class="text-accent hover:underline">View PDF →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Model Evolution -->
+  <section id="evolution" class="border-t border-surface-700/50">
+    <div class="section-container">
+      <p class="section-label">Model Evolution</p>
+      <h2 class="section-title">The Queen keeps learning.</h2>
+      <p class="text-text-secondary mb-12">Every training run improves accuracy. We own the weights. The moat deepens.</p>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Version Timeline -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-4 p-4 bg-accent/10 border border-accent/30 rounded-lg">
+            <div class="text-center">
+              <p class="font-mono text-accent font-medium">spine-v1.0</p>
+              <p class="text-2xl font-light text-text-primary">80.44%</p>
+            </div>
+            <div class="flex-1 text-sm text-text-secondary">
+              <p>1,975 studies</p>
+              <p class="text-text-muted">Dec 28, 2024</p>
+            </div>
+            <span class="px-2 py-1 bg-accent/20 text-accent text-xs rounded">CURRENT</span>
+          </div>
+
+          <div class="flex items-center gap-4 p-4 bg-surface-800/50 border border-surface-600/50 rounded-lg">
+            <div class="text-center">
+              <p class="font-mono text-text-muted font-medium">spine-v0.9</p>
+              <p class="text-2xl font-light text-text-secondary">78.2%</p>
+            </div>
+            <div class="flex-1 text-sm text-text-muted">
+              <p>1,500 studies</p>
+              <p>Dec 20, 2024</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-4 bg-surface-800/50 border border-surface-600/50 rounded-lg">
+            <div class="text-center">
+              <p class="font-mono text-text-muted font-medium">spine-v0.8</p>
+              <p class="text-2xl font-light text-text-secondary">75.1%</p>
+            </div>
+            <div class="flex-1 text-sm text-text-muted">
+              <p>1,000 studies</p>
+              <p>Dec 15, 2024</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-4 bg-surface-800/50 border border-surface-600/50 rounded-lg">
+            <div class="text-center">
+              <p class="font-mono text-text-muted font-medium">spine-v0.5</p>
+              <p class="text-2xl font-light text-text-secondary">71.3%</p>
+            </div>
+            <div class="flex-1 text-sm text-text-muted">
+              <p>500 studies</p>
+              <p>Dec 10, 2024</p>
+            </div>
+          </div>
+
+          <p class="text-sm text-text-muted pt-4 border-t border-surface-700">
+            <span class="text-accent">Next:</span> spine-v1.1 training on 5,000+ studies. Target: 85%+ accuracy.
+          </p>
+        </div>
+
+        <!-- Models Card -->
+        <div class="card">
+          <p class="text-text-muted text-xs mb-6">Accuracy Over Time</p>
+          <div class="relative h-48">
+            <!-- Y-axis labels -->
+            <div class="absolute left-0 top-0 bottom-8 w-12 flex flex-col justify-between text-xs text-text-muted">
+              <span>90%</span>
+              <span>80%</span>
+              <span>70%</span>
+              <span>60%</span>
+            </div>
+            <!-- Chart area -->
+            <div class="ml-12 h-40 relative border-l border-b border-surface-600">
+              <!-- Grid lines -->
+              <div class="absolute inset-0 flex flex-col justify-between">
+                <div class="border-t border-surface-700/50"></div>
+                <div class="border-t border-surface-700/50"></div>
+                <div class="border-t border-surface-700/50"></div>
+              </div>
+              <!-- Data points and line -->
+              <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="none">
+                <polyline
+                  points="10,85 80,60 160,45 240,30"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="text-accent"
+                />
+                <circle cx="10" cy="85" r="4" class="fill-accent"/>
+                <circle cx="80" cy="60" r="4" class="fill-accent"/>
+                <circle cx="160" cy="45" r="4" class="fill-accent"/>
+                <circle cx="240" cy="30" r="6" class="fill-accent stroke-accent/30" stroke-width="4"/>
+              </svg>
+            </div>
+            <!-- X-axis labels -->
+            <div class="ml-12 flex justify-between text-xs text-text-muted mt-2">
+              <span>v0.5</span>
+              <span>v0.8</span>
+              <span>v0.9</span>
+              <span>v1.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QueenBee Models -->
+  <section id="models" class="border-t border-surface-700/50">
+    <div class="section-container">
+      <p class="section-label">Models</p>
+      <h2 class="section-title">The QueenBee family.</h2>
+      <p class="text-text-secondary text-lg mb-12">Purpose-built medical AI. Fine-tuned on Mistral-7B. Open weights on HuggingFace.</p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xl">🐝</span>
+            <span class="font-mono text-accent text-sm">QueenBee-Spine</span>
+          </div>
+          <p class="text-text-primary font-medium mb-2">Lumbar MRI Reports</p>
+          <p class="text-text-secondary text-sm mb-4">25-head stenosis classifier + LLM report generation. L1-S1 coverage.</p>
+          <div class="flex items-center justify-between text-xs">
+            <span class="text-emerald-400">80.4% acc</span>
+            <span class="text-text-muted">1,975 studies</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xl">👁️</span>
+            <span class="font-mono text-blue-400 text-sm">QueenBee-Eyes</span>
+          </div>
+          <p class="text-text-primary font-medium mb-2">Diabetic Retinopathy</p>
+          <p class="text-text-secondary text-sm mb-4">5-class ICDR grading. Fundus photo analysis. Referral detection.</p>
+          <div class="flex items-center justify-between text-xs">
+            <span class="text-emerald-400">95% referrable</span>
+            <span class="text-text-muted">88K images</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xl">🦶</span>
+            <span class="font-mono text-purple-400 text-sm">QueenBee-Feet</span>
+          </div>
+          <p class="text-text-primary font-medium mb-2">Diabetic Foot Analysis</p>
+          <p class="text-text-secondary text-sm mb-4">Ulcer detection + osteomyelitis X-ray analysis. Photo + radiograph.</p>
+          <div class="flex items-center justify-between text-xs">
+            <span class="text-emerald-400">$0.03/scan</span>
+            <span class="text-text-muted">1K+ images</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xl">💬</span>
+            <span class="font-mono text-amber-400 text-sm">Diabetes-AI</span>
+          </div>
+          <p class="text-text-primary font-medium mb-2">Companion Chat</p>
+          <p class="text-text-secondary text-sm mb-4">Emotional support + nutrition guidance. Crisis-aware. Free & open source.</p>
+          <div class="flex items-center justify-between text-xs">
+            <span class="text-emerald-400">MIT License</span>
+            <span class="text-text-muted">1,800 convos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-4 justify-center">
+        <a href="https://huggingface.co/QuantumSwarm" target="_blank" class="btn-secondary text-sm">
+          <svg class="w-4 h-4" viewBox="0 0 120 120" fill="currentColor">
+            <path d="M37.6,75.5c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S40.9,75.5,37.6,75.5z M82.4,75.5c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S85.7,75.5,82.4,75.5z M60,95c-19.3,0-35-15.7-35-35s15.7-35,35-35s35,15.7,35,35S79.3,95,60,95z"/>
+          </svg>
+          View on HuggingFace
+        </a>
+        <a href="#" class="btn-secondary text-sm">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          GitHub Repos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet Status -->
+  <section id="fleet" class="border-t border-surface-700/50 bg-surface-800/30">
+    <div class="section-container">
+      <p class="section-label">Fleet Status</p>
+      <h2 class="section-title">296 GPUs. See them hum.</h2>
+      <p class="text-text-secondary mb-12">On-prem. Solar-powered. No monthly cloud bill. Real-time utilization.</p>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- GPU Cards -->
+        <div class="space-y-4">
+          <div class="card">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-text-primary font-medium">RTX 5090 (32GB)</span>
+              <span class="text-text-muted text-sm">41/48 active</span>
+            </div>
+            <div class="h-2 bg-surface-700 rounded-full overflow-hidden">
+              <div class="h-full bg-accent rounded-full" style="width: 85%"></div>
+            </div>
+            <p class="text-right text-xs text-accent mt-1">85%</p>
+          </div>
+
+          <div class="card">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-text-primary font-medium">RTX 6000 Ada (96GB)</span>
+              <span class="text-text-muted text-sm">28/48 active</span>
+            </div>
+            <div class="h-2 bg-surface-700 rounded-full overflow-hidden">
+              <div class="h-full bg-blue-400 rounded-full" style="width: 58%"></div>
+            </div>
+            <p class="text-right text-xs text-blue-400 mt-1">58%</p>
+          </div>
+
+          <div class="card">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-text-primary font-medium">RTX 3090 Ti (24GB)</span>
+              <span class="text-text-muted text-sm">96/100 active</span>
+            </div>
+            <div class="h-2 bg-surface-700 rounded-full overflow-hidden">
+              <div class="h-full bg-emerald-400 rounded-full" style="width: 96%"></div>
+            </div>
+            <p class="text-right text-xs text-emerald-400 mt-1">96%</p>
+          </div>
+
+          <div class="card">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-text-primary font-medium">RTX 3090 FE (24GB)</span>
+              <span class="text-text-muted text-sm">78/100 active</span>
+            </div>
+            <div class="h-2 bg-surface-700 rounded-full overflow-hidden">
+              <div class="h-full bg-purple-400 rounded-full" style="width: 78%"></div>
+            </div>
+            <p class="text-right text-xs text-purple-400 mt-1">78%</p>
+          </div>
+        </div>
+
+        <!-- Fleet Stats -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="card text-center">
+            <span class="text-2xl mb-2 block">🧠</span>
+            <p class="text-3xl font-light text-text-primary">11 TB</p>
+            <p class="text-text-muted text-sm">Total VRAM</p>
+          </div>
+          <div class="card text-center">
+            <span class="text-2xl mb-2 block">☀️</span>
+            <p class="text-3xl font-light text-amber-400">Solar</p>
+            <p class="text-text-muted text-sm">Power Source</p>
+          </div>
+          <div class="card text-center">
+            <span class="text-2xl mb-2 block">⚡</span>
+            <p class="text-3xl font-light text-accent">47 kW</p>
+            <p class="text-text-muted text-sm">Current Draw</p>
+          </div>
+          <div class="card text-center">
+            <span class="text-2xl mb-2 block">🔋</span>
+            <p class="text-3xl font-light text-emerald-400">27 kWh</p>
+            <p class="text-text-muted text-sm">Battery Backup</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why This Matters -->
+  <section id="impact" class="border-t border-surface-700/50">
+    <div class="section-container">
+      <p class="section-label">Impact</p>
+      <h2 class="section-title">Why we built this.</h2>
+      <p class="text-text-secondary text-lg mb-12">Built by a Type 1 diabetic who lost a foot to the disease. This is personal.</p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card border-red-500/20">
+          <p class="text-4xl font-light text-red-400 mb-2">20s</p>
+          <p class="text-text-primary font-medium mb-2">One limb amputated</p>
+          <p class="text-text-secondary text-sm">Every 20 seconds, somewhere in the world, a limb is amputated due to diabetes.</p>
+        </div>
+        <div class="card border-amber-500/20">
+          <p class="text-4xl font-light text-amber-400 mb-2">85%</p>
+          <p class="text-text-primary font-medium mb-2">Preceded by ulcer</p>
+          <p class="text-text-secondary text-sm">85% of diabetes-related amputations are preceded by a foot ulcer. Early detection prevents this.</p>
+        </div>
+        <div class="card border-emerald-500/20">
+          <p class="text-4xl font-light text-emerald-400 mb-2">95%</p>
+          <p class="text-text-primary font-medium mb-2">Preventable</p>
+          <p class="text-text-secondary text-sm">95% of vision loss from diabetic retinopathy is preventable with early screening.</p>
+        </div>
+      </div>
+
+      <div class="mt-8 p-6 bg-surface-800/50 rounded-lg border border-surface-600/50">
+        <div class="flex flex-wrap gap-8 justify-center text-center">
+          <div>
+            <p class="text-2xl font-light text-text-primary">130K+</p>
+            <p class="text-text-muted text-sm">Amputations/year (US)</p>
+          </div>
+          <div>
+            <p class="text-2xl font-light text-text-primary">$9-13B</p>
+            <p class="text-text-muted text-sm">Annual cost</p>
+          </div>
+          <div>
+            <p class="text-2xl font-light text-text-primary">34.6%</p>
+            <p class="text-text-muted text-sm">Diabetics with DR</p>
+          </div>
+          <div>
+            <p class="text-2xl font-light text-text-primary">50%</p>
+            <p class="text-text-muted text-sm">Skip annual eye exam</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="border-t border-surface-700/50 bg-surface-800/30">
+    <div class="section-container text-center">
+      <blockquote class="text-2xl md:text-3xl font-light text-text-primary italic max-w-3xl mx-auto">
+        "We don't hope you trust us.<br>We give you math you can verify."
+      </blockquote>
+      <p class="text-text-muted mt-6 text-sm">— Built by someone who lost a foot to diabetes. This isn't a startup pitch. It's a mission.</p>
+    </div>
+  </section>
+
+  <!-- Free Trial -->
+  <section id="trial" class="border-t border-surface-700/50 bg-accent/5">
+    <div class="section-container">
+      <div class="max-w-2xl mx-auto text-center">
+        <p class="section-label">Free Trial</p>
+        <h2 class="text-3xl md:text-4xl font-light text-text-primary mb-4 tracking-tight">
+          500 scans. 30 days. Zero commitment.
+        </h2>
+        <p class="text-text-secondary text-lg mb-8">
+          See what sovereign inference feels like. No credit card. No sales call. Just results.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4 text-sm text-text-secondary mb-8">
+          <span class="flex items-center gap-2"><span class="text-emerald-400">✓</span> 500 free credits</span>
+          <span class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Full PDF reports</span>
+          <span class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Ed25519 identity</span>
+          <span class="flex items-center gap-2"><span class="text-emerald-400">✓</span> API + CLI access</span>
+        </div>
+
+        <a href="#" class="btn-primary text-lg px-8 py-4">
+          Start Free Trial →
+        </a>
+
+        <p class="text-text-muted text-sm mt-6">
+          $50 value. Yours free. Because we know you'll stay.
+        </p>
       </div>
     </div>
   </section>
@@ -110,7 +876,7 @@
     <div class="section-container">
       <p class="section-label">Process</p>
       <h2 class="section-title">How it works</h2>
-      
+
       <div class="grid md:grid-cols-2 gap-16 mt-12">
         <div class="space-y-0">
           <div class="flow-step" data-step="1">
@@ -134,7 +900,7 @@
             <p class="text-text-secondary text-sm">Results delivered with signed proof. Scan data is purged.</p>
           </div>
         </div>
-        
+
         <div class="card bg-surface-800/30 flex items-center justify-center">
           <div class="text-center py-8">
             <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center">
@@ -309,19 +1075,24 @@
     <div class="section-container text-center">
       <p class="section-label">Get Started</p>
       <h2 class="text-3xl md:text-4xl font-light text-text-primary mb-6 tracking-tight">
-        Ready to see it work?
+        Ready for sovereign inference?
       </h2>
       <p class="text-text-secondary max-w-xl mx-auto mb-10">
-        Request a technical walkthrough to see SwarmView in action. No sales pitch — just architecture and execution.
+        Start with HostSwarm. No cloud required. No vendor lock-in. Just results.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="mailto:hello@swarmview.io?subject=Technical%20Walkthrough%20Request" class="btn-primary">
-          Request Technical Walkthrough
+        <a href="#" class="btn-primary">
+          Launch HostSwarm
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
           </svg>
         </a>
-        <a href="#protocol" class="btn-secondary">View SwarmVision Protocol</a>
+        <a href="#" class="btn-secondary">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+          </svg>
+          Join Discord
+        </a>
       </div>
     </div>
   </section>
@@ -329,18 +1100,25 @@
   <!-- Footer -->
   <footer class="border-t border-surface-700/50 bg-surface-800/30">
     <div class="max-w-5xl mx-auto px-6 py-12">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <div class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-            <path d="M2 17l10 5 10-5"/>
-            <path d="M2 12l10 5 10-5"/>
-          </svg>
-          <span class="text-text-primary font-medium">SwarmView</span>
-          <span class="text-text-muted mx-2">·</span>
-          <span class="text-text-muted text-sm">Built on SwarmVision</span>
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="flex items-center gap-3">
+          <span class="text-2xl">🐝</span>
+          <span class="text-text-primary font-medium text-lg">QuantumSwarm</span>
         </div>
-        <p class="text-text-muted text-sm font-mono">No cookies. No tracking.</p>
+        <div class="flex flex-wrap items-center justify-center gap-6 text-sm">
+          <a href="#" class="text-text-secondary hover:text-text-primary transition-colors">HostSwarm</a>
+          <a href="#" class="text-text-secondary hover:text-text-primary transition-colors">Markets</a>
+          <a href="#samples" class="text-text-secondary hover:text-text-primary transition-colors">Sample Reports</a>
+          <a href="#" class="text-text-secondary hover:text-text-primary transition-colors flex items-center gap-1.5">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+            Discord
+          </a>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-surface-700/50 text-center">
+        <p class="text-text-muted text-sm font-mono">No cookies. No tracking. Just inference.</p>
       </div>
     </div>
   </footer>
