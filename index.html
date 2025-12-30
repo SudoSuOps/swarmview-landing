@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwarmView — Medical AI, executed locally</title>
+  <meta name="description" content="SwarmView delivers MRI and imaging analysis using locally operated compute — with no data retention and cryptographic proof of execution.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="grid-bg">
+  
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-surface-900/80 backdrop-blur-md border-b border-surface-700/50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <svg class="w-6 h-6 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+          <path d="M2 17l10 5 10-5"/>
+          <path d="M2 12l10 5 10-5"/>
+        </svg>
+        <span class="font-medium text-text-primary tracking-tight">SwarmView</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm text-text-secondary">
+        <a href="#how-it-works" class="hover:text-text-primary transition-colors">How it works</a>
+        <a href="#trust" class="hover:text-text-primary transition-colors">Trust</a>
+        <a href="#protocol" class="hover:text-text-primary transition-colors">Protocol</a>
+        <a href="mailto:hello@swarmview.io" class="btn-primary py-2 px-4">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-gradient min-h-screen flex items-center pt-20">
+    <div class="section-container">
+      <div class="max-w-3xl">
+        <p class="section-label opacity-0 animate-fade-in">SwarmVision Protocol</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-light text-text-primary mb-6 tracking-tight leading-tight opacity-0 animate-fade-in-up stagger-1">
+          Medical AI,<br>executed locally.
+        </h1>
+        <p class="text-lg md:text-xl text-text-secondary font-light leading-relaxed mb-10 max-w-2xl opacity-0 animate-fade-in-up stagger-2">
+          SwarmView delivers MRI and imaging analysis using locally operated compute — 
+          with no data retention and cryptographic proof of execution.
+        </p>
+        <div class="flex flex-wrap gap-4 opacity-0 animate-fade-in-up stagger-3">
+          <a href="#how-it-works" class="btn-primary">
+            View Architecture
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </a>
+          <a href="#protocol" class="btn-secondary">Read the Protocol</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What is SwarmView -->
+  <section id="what" class="border-t border-surface-700/50">
+    <div class="section-container">
+      <p class="section-label">Overview</p>
+      <h2 class="section-title">What is SwarmView?</h2>
+      
+      <div class="grid md:grid-cols-2 gap-12 mt-12">
+        <div class="space-y-6 text-text-secondary">
+          <p>SwarmView is not a cloud. It does not store your data. It does not process scans on remote servers owned by third parties.</p>
+          <p>Instead, SwarmView routes imaging jobs to <strong class="text-text-primary">local, trusted compute operators</strong> — hardware you can verify, operated by entities you can audit.</p>
+          <p>Compute executes ephemerally in memory. Results return immediately. Data never persists.</p>
+        </div>
+        
+        <!-- Diagram -->
+        <div class="card">
+          <div class="space-y-4 font-mono text-sm">
+            <div class="flex items-center gap-4">
+              <div class="w-24 py-2 px-3 bg-surface-700 rounded text-text-secondary text-center">Clinic</div>
+              <svg class="w-8 h-4 connector" fill="none" stroke="currentColor" viewBox="0 0 32 16">
+                <path d="M0 8h28m-4-4l4 4-4 4" stroke-width="1.5"/>
+              </svg>
+              <div class="w-28 py-2 px-3 bg-accent/20 border border-accent/30 rounded text-accent text-center">SwarmView</div>
+            </div>
+            <div class="ml-36 pl-4 border-l border-surface-600">
+              <svg class="w-4 h-6 connector -ml-2" fill="none" stroke="currentColor" viewBox="0 0 16 24">
+                <path d="M8 0v20m-4-4l4 4 4-4" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="flex items-center gap-4 ml-24">
+              <div class="w-32 py-2 px-3 bg-surface-700 rounded text-text-secondary text-center">Local Operator</div>
+            </div>
+            <div class="ml-36 pl-4 border-l border-surface-600">
+              <svg class="w-4 h-6 connector -ml-2 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 16 24">
+                <path d="M8 0v20m-4-4l4 4 4-4" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-24 py-2 px-3 bg-surface-700 rounded text-text-secondary text-center">Clinic</div>
+              <svg class="w-8 h-4 connector rotate-180" fill="none" stroke="currentColor" viewBox="0 0 32 16">
+                <path d="M0 8h28m-4-4l4 4-4 4" stroke-width="1.5"/>
+              </svg>
+              <div class="w-28 py-2 px-3 bg-surface-700/50 rounded text-text-muted text-center">Report</div>
+            </div>
+          </div>
+          <p class="mt-6 text-xs text-text-muted font-mono">No data stored at any stage</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section id="how-it-works" class="border-t border-surface-700/50">
+    <div class="section-container">
+      <p class="section-label">Process</p>
+      <h2 class="section-title">How it works</h2>
+      
+      <div class="grid md:grid-cols-2 gap-16 mt-12">
+        <div class="space-y-0">
+          <div class="flow-step" data-step="1">
+            <h3 class="text-text-primary font-medium mb-2">Clinic submits a scan</h3>
+            <p class="text-text-secondary text-sm">Imaging data is encrypted and transmitted via secure channel.</p>
+          </div>
+          <div class="flow-step" data-step="2">
+            <h3 class="text-text-primary font-medium mb-2">Job routes to local compute</h3>
+            <p class="text-text-secondary text-sm">SwarmView selects a verified Microscaler operator based on availability and proximity.</p>
+          </div>
+          <div class="flow-step" data-step="3">
+            <h3 class="text-text-primary font-medium mb-2">AI executes in memory</h3>
+            <p class="text-text-secondary text-sm">Analysis runs ephemerally — no disk writes, no persistence.</p>
+          </div>
+          <div class="flow-step" data-step="4">
+            <h3 class="text-text-primary font-medium mb-2">Proof of Execution generated</h3>
+            <p class="text-text-secondary text-sm">Cryptographic attestation proves which operator ran which model on which hardware.</p>
+          </div>
+          <div class="flow-step" data-step="5">
+            <h3 class="text-text-primary font-medium mb-2">Report returned</h3>
+            <p class="text-text-secondary text-sm">Results delivered with signed proof. Scan data is purged.</p>
+          </div>
+        </div>
+        
+        <div class="card bg-surface-800/30 flex items-center justify-center">
+          <div class="text-center py-8">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center">
+              <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <p class="text-text-primary font-medium mb-2">No patient data is stored.</p>
+            <p class="text-text-muted text-sm">Ever. By design.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust & Verification -->
+  <section id="trust" class="border-t border-surface-700/50">
+    <div class="section-container">
+      <p class="section-label">Verification</p>
+      <h2 class="section-title">Security & compliance by architecture</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div class="card">
+          <div class="w-10 h-10 rounded bg-accent/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"/>
+            </svg>
+          </div>
+          <h3 class="text-text-primary font-medium mb-2">ENS-based Identity</h3>
+          <p class="text-text-secondary text-sm">Every operator is identified by a verifiable on-chain identity. No anonymous actors.</p>
+        </div>
+        
+        <div class="card">
+          <div class="w-10 h-10 rounded bg-accent/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-text-primary font-medium mb-2">Proof of Execution</h3>
+          <p class="text-text-secondary text-sm">Cryptographic attestation proves exactly what ran, where, and when.</p>
+        </div>
+        
+        <div class="card">
+          <div class="w-10 h-10 rounded bg-accent/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+            </svg>
+          </div>
+          <h3 class="text-text-primary font-medium mb-2">Signed Results</h3>
+          <p class="text-text-secondary text-sm">Every report is cryptographically signed by the executing operator.</p>
+        </div>
+        
+        <div class="card">
+          <div class="w-10 h-10 rounded bg-accent/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+            </svg>
+          </div>
+          <h3 class="text-text-primary font-medium mb-2">Auditable Trail</h3>
+          <p class="text-text-secondary text-sm">Complete execution history available for compliance and verification.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Local Compute -->
+  <section class="border-t border-surface-700/50">
+    <div class="section-container">
+      <p class="section-label">Comparison</p>
+      <h2 class="section-title">Why local compute?</h2>
+      
+      <div class="mt-12 overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-surface-600">
+              <th class="text-left py-4 pr-8 text-text-muted font-medium"></th>
+              <th class="text-left py-4 px-6 text-text-muted font-medium">Cloud AI</th>
+              <th class="text-left py-4 px-6 text-accent font-medium">SwarmView</th>
+            </tr>
+          </thead>
+          <tbody class="text-text-secondary">
+            <tr class="border-b border-surface-700/50">
+              <td class="py-4 pr-8 text-text-primary">Data storage</td>
+              <td class="py-4 px-6">Retained on vendor servers</td>
+              <td class="py-4 px-6 text-text-primary">No retention — ephemeral only</td>
+            </tr>
+            <tr class="border-b border-surface-700/50">
+              <td class="py-4 pr-8 text-text-primary">Latency</td>
+              <td class="py-4 px-6">Variable, region-dependent</td>
+              <td class="py-4 px-6 text-text-primary">Low — local operator proximity</td>
+            </tr>
+            <tr class="border-b border-surface-700/50">
+              <td class="py-4 pr-8 text-text-primary">Cost predictability</td>
+              <td class="py-4 px-6">Usage-based, opaque</td>
+              <td class="py-4 px-6 text-text-primary">Fixed per-scan pricing</td>
+            </tr>
+            <tr class="border-b border-surface-700/50">
+              <td class="py-4 pr-8 text-text-primary">Operator accountability</td>
+              <td class="py-4 px-6">Anonymous infrastructure</td>
+              <td class="py-4 px-6 text-text-primary">ENS-verified operators</td>
+            </tr>
+            <tr>
+              <td class="py-4 pr-8 text-text-primary">Outage blast radius</td>
+              <td class="py-4 px-6">Global — single point of failure</td>
+              <td class="py-4 px-6 text-text-primary">Localized — distributed resilience</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Built on SwarmVision -->
+  <section id="protocol" class="border-t border-surface-700/50">
+    <div class="section-container">
+      <p class="section-label">Protocol</p>
+      <h2 class="section-title">Built on SwarmVision</h2>
+      
+      <div class="grid md:grid-cols-2 gap-12 mt-12">
+        <div class="space-y-6 text-text-secondary">
+          <p>SwarmView is an application built on the <strong class="text-text-primary">SwarmVision Protocol</strong> — an open specification for decentralized, operator-owned compute.</p>
+          <p>The protocol defines how jobs are routed, how execution is verified, and how operators are held accountable. It is designed for resilience, auditability, and trust minimization.</p>
+          <p>SwarmVision is not a token. It is not a speculative asset. It is infrastructure.</p>
+          
+          <div class="flex flex-wrap gap-4 pt-4">
+            <a href="#" class="btn-secondary text-sm">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+            <a href="#" class="btn-secondary text-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+              Protocol Docs
+            </a>
+          </div>
+        </div>
+        
+        <div class="card bg-surface-800/30">
+          <p class="font-mono text-xs text-text-muted mb-4">// SwarmVision Protocol</p>
+          <div class="space-y-3 font-mono text-sm">
+            <div class="flex items-center gap-3">
+              <span class="text-accent">→</span>
+              <span class="text-text-secondary">Open specification</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-accent">→</span>
+              <span class="text-text-secondary">Operator-owned compute</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-accent">→</span>
+              <span class="text-text-secondary">Cryptographic verification</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-accent">→</span>
+              <span class="text-text-secondary">Distributed resilience</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-accent">→</span>
+              <span class="text-text-secondary">No token required</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="border-t border-surface-700/50">
+    <div class="section-container text-center">
+      <p class="section-label">Get Started</p>
+      <h2 class="text-3xl md:text-4xl font-light text-text-primary mb-6 tracking-tight">
+        Ready to see it work?
+      </h2>
+      <p class="text-text-secondary max-w-xl mx-auto mb-10">
+        Request a technical walkthrough to see SwarmView in action. No sales pitch — just architecture and execution.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="mailto:hello@swarmview.io?subject=Technical%20Walkthrough%20Request" class="btn-primary">
+          Request Technical Walkthrough
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+        <a href="#protocol" class="btn-secondary">View SwarmVision Protocol</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-surface-700/50 bg-surface-800/30">
+    <div class="max-w-5xl mx-auto px-6 py-12">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+          </svg>
+          <span class="text-text-primary font-medium">SwarmView</span>
+          <span class="text-text-muted mx-2">·</span>
+          <span class="text-text-muted text-sm">Built on SwarmVision</span>
+        </div>
+        <p class="text-text-muted text-sm font-mono">No cookies. No tracking.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
